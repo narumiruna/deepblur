@@ -1,0 +1,26 @@
+device: cuda
+
+job:
+  name: MNISTTrainingJob
+
+trainer:
+  name: MNISTTrainer
+  num_epochs: 20
+  num_classes: 10
+
+dataset:
+  name: MNISTDataLoader
+  root: data
+  batch_size: 256
+  num_workers: 0
+
+model:
+  name: LeNet
+
+optimizer:
+  name: Adam
+  lr: 1.e-3
+
+scheduler:
+  name: StepLR
+  step_size: 10
