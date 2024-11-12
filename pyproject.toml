@@ -25,9 +25,11 @@ build-backend = "hatchling.build"
 
 [dependency-groups]
 dev = [
+    "jupyter>=1.1.1",
     "mypy>=1.13.0",
-    "pytest>=8.3.3",
     "pytest-cov>=6.0.0",
+    "pytest>=8.3.3",
+    "ruff-lsp>=0.0.58",
     "ruff>=0.7.3",
     "types-pyyaml>=6.0.12.20240917",
     "types-redis>=4.6.0.20241004",
